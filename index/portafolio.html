@@ -1,16 +1,292 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title> Aura Pico| Desarrolladora Web Junior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/portafolio.css">
     <link rel="icon" href="../storage/icono.png" type="image/x-icon">
+
 </head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">AM</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Ana Martínez</h1>
+            <p class="tagline">Desarrolladora Web Junior | Creando soluciones digitales</p>
+            <a href="#" class="btn"><span>Descargar CV</span></a>
+        </div>
+    </header>
 
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy una desarrolladora web con pasión por crear experiencias digitales intuitivas y atractivas. Mi viaje en el mundo de la programación comenzó cuando descubrí que podía combinar mi amor por la resolución de problemas con mi creatividad.</p>
+                    <p>Me especializo en desarrollo frontend pero también disfruto trabajando en el backend, lo que me permite tener una visión completa del proceso de desarrollo. Creo en el aprendizaje continuo y siempre estoy explorando nuevas tecnologías y metodologías.</p>
+                    <p>Cuando no estoy codificando, me gusta contribuir a proyectos de código abierto, participar en hackathons y compartir lo que aprendo a través de blogs y tutoriales.</p>
+                </div>
+                <div class="about-image">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>Responsive Design</li>
+                        <li>SASS/LESS</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Python</li>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>Webpack</li>
+                        <li>VS Code</li>
+                        <li>Figma</li>
+                        <li>Jira</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-brain"></i> Blandas</h3>
+                    <ul class="skill-list">
+                        <li>Comunicación clara</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Gestión del tiempo</li>
+                        <li>Resolución de problemas</li>
+                        <li>Aprendizaje rápido</li>
+                        <li>Atención al detalle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experiencia</h2>
+            <div class="experience-tabs">
+                <button class="tab-btn active" data-tab="education">Educación</button>
+                <button class="tab-btn" data-tab="work">Experiencia Laboral</button>
+                <button class="tab-btn" data-tab="projects">Proyectos</button>
+            </div>
+            
+            <div class="tab-content active" id="education">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Bootcamp Desarrollo Full Stack</h3>
+                        <span class="experience-date">2023</span>
+                    </div>
+                    <p class="experience-company">Academia de Código</p>
+                    <p>Formación intensiva de 12 semanas en desarrollo web full stack, trabajando con tecnologías modernas como React, Node.js y MongoDB.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Grado en Ingeniería Informática</h3>
+                        <span class="experience-date">2018 - 2022</span>
+                    </div>
+                    <p class="experience-company">Universidad Tecnológica</p>
+                    <p>Especialización en Ingeniería del Software. Proyecto final sobre desarrollo de aplicaciones web accesibles.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="work">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Desarrolladora Frontend Junior</h3>
+                        <span class="experience-date">2022 - Presente</span>
+                    </div>
+                    <p class="experience-company">TechSolutions Inc.</p>
+                    <p>Desarrollo y mantenimiento de interfaces de usuario utilizando React. Colaboración con equipo de diseño para implementar features nuevas.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Prácticas Profesionales</h3>
+                        <span class="experience-date">2021 (6 meses)</span>
+                    </div>
+                    <p class="experience-company">StartUp Innovadora</p>
+                    <p>Desarrollo de componentes reutilizables y participación en sprints ágiles como parte del equipo de desarrollo.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="projects">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Task Manager App</h3>
+                        <span class="experience-date">2023</span>
+                    </div>
+                    <p>Aplicación web para gestión de tareas con autenticación y base de datos en tiempo real.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">E-commerce Site</h3>
+                        <span class="experience-date">2022</span>
+                    </div>
+                    <p>Tienda online completa con carrito de compras, pasarela de pago y panel de administración.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2>Proyectos Recientes</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://via.placeholder.com/350x200');"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">Aplicación meteorológica con pronóstico actual y de 5 días, utilizando API de OpenWeather.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">API REST</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repositorio</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://via.placeholder.com/350x200');"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Recipe Finder</h3>
+                        <p class="project-description">Buscador de recetas con filtros por ingredientes, tipo de comida y tiempo de preparación.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">SASS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repositorio</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://via.placeholder.com/350x200');"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blog Personal</h3>
+                        <p class="project-description">Blog técnico con sistema de comentarios y autenticación, creado con CMS headless.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Repositorio</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>¡Hablemos!</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> auracamilapico@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +57 3227770682</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Santander , Piedecuesta</li>
+                        <li><i class="fab fa-linkedin"></i> linkedin.com/in/aura-camila-p-3125a4339/</li>
+                        <li><i class="fab fa-github"></i> github.com/AuraCamilaPicoAraque</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn"><span>Enviar Mensaje</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <ul class="footer-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-codepen"></i></a>
+            </div>
+            <p class="copyright">© 2025 Aura Pico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/portafolio.js"></script>
 </body>
-<script src="../js/portafolio.js"></script>
 </html>
