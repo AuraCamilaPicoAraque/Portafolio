@@ -61,11 +61,19 @@ header::after {
 
 h1 {
     font-size: 3rem;
+    color: white;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, );
 }
 
+
+.yo {
+
+width: 5vw;
+border: 0.1vh solid white;
+border-radius: 50%;
+
+}
 .tagline {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -116,6 +124,8 @@ nav {
     padding: 1.5rem 0;
     z-index: 100;
     transition: all 0.3s ease;
+    border-bottom: 0.1vh solid rgba(214, 214, 214, 0.856);
+    
 }
 
 nav.scrolled {
@@ -131,10 +141,7 @@ nav.scrolled {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    -webkit-text-fill-color: transparent;
+    width: 1.5vw;
 }
 
 .nav-links {
