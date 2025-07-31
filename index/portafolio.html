@@ -3,101 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Aura Pico</title>
+    <title>Aura Pico | Desarrolladora Web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/portafolio.css">
     <link rel="icon" href="../storage/icono.png" type="image/x-icon">
-
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar">
+    <nav id="navbar" class="glass-effect">
         <div class="container nav-container">
-            <div class="logo"> <img class="logo" src="../storage/icono.png"></div>
+            <div class="logo">
+                <img src="../storage/icono.png" alt="Logo">
+                <span class="logo-text">Aura Pico</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header>
-        <div class="header-content">            
-            <img class="yo" src="../storage/icono.png" alt="yo">
-            <h1>Aura Pico</h1>
-            <p class="tagline">Trabajando para el mundo , aqui puedes descargar mi hoja de vida   </p>
-            <a href="#" class="btn"><span>Descargar CV</span></a>
+    <header class="parallax">
+        <div class="header-content animate__animated animate__fadeIn">            
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img class="profile-image" src="../storage/yo.jpeg" alt="Aura Pico">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+            <h1 class="animate__animated animate__fadeInDown">Aura Pico</h1>
+            <div class="typewriter">
+                <p class="tagline">Desarrolladora Web Full Stack</p>
+            </div>
+            <div class="header-buttons">
+                <a href="../storage/AURA CAMILA PICO ARAQUE.pdf" download="AURACAMILAPICOARAQUE.pdf" class="btn btn-download">
+                    <i class="fas fa-download"></i> <span>Descargar CV</span>
+                </a>
+                <a href="#contact" class="btn btn-contact">
+                    <i class="fas fa-paper-plane"></i> <span>Contáctame</span>
+                </a>
+            </div>
+            <div class="social-header">
+                <a href="https://linkedin.com/in/aura-camila-p-3125a4339/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/AuraCamilaPicoAraque" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:auracamilapico@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
         </div>
     </header>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
-            <h2>Sobre mí</h2>
+            <h2 class="section-title"><span>Sobre mí</span></h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Soy una desarrolladora web con pasión por crear experiencias digitales intuitivas y atractivas. Mi viaje en el mundo de la programación comenzó cuando descubrí que podía combinar mi amor por la resolución de problemas con mi creatividad.</p>
-                    <p>Me especializo en desarrollo frontend pero también disfruto trabajando en el backend, lo que me permite tener una visión completa del proceso de desarrollo. Creo en el aprendizaje continuo y siempre estoy explorando nuevas tecnologías y metodologías.</p>
-                    <p>Cuando no estoy codificando, me gusta contribuir a proyectos de código abierto, participar en hackathons y compartir lo que aprendo a través de blogs y tutoriales.</p>
+                    <p class="animate-on-scroll">Soy una desarrolladora web con pasión por crear experiencias digitales intuitivas y atractivas. Mi viaje en el mundo de la programación comenzó cuando descubrí que podía combinar mi amor por la resolución de problemas con mi creatividad.</p>
+                    <p class="animate-on-scroll">Me especializo en desarrollo frontend pero también disfruto trabajando en el backend, lo que me permite tener una visión completa del proceso de desarrollo. Creo en el aprendizaje continuo y siempre estoy explorando nuevas tecnologías y metodologías.</p>
+                    <p class="animate-on-scroll">Cuando no estoy codificando, me gusta contribuir a proyectos de código abierto, participar en hackathons y compartir lo que aprendo a través de blogs y tutoriales.</p>
+                    
+                    <div class="stats-container animate-on-scroll">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="20">0</div>
+                            <div class="stat-text">Proyectos completados</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-text">Años de experiencia</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-text">Clientes satisfechos</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-image">
-                    <img src="">
+                    <div class="skills-chart animate-on-scroll">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <div class="container">
-            <h2>Habilidades</h2>
+            <h2 class="section-title"><span>Habilidades</span></h2>
             <div class="skills-container">
-                <div class="skill-card">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
-                    <ul class="skill-list">
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React.js</li>
-                        <li>Vue.js</li>
-                        <li>Responsive Design</li>
-                        <li>SASS/LESS</li>
-                    </ul>
+                <div class="skill-card glass-effect animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Frontend</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="HTML5 & CSS3" data-level="95"></div>
+                        <div class="skill-bar" data-skill="JavaScript (ES6+)" data-level="90"></div>
+                        <div class="skill-bar" data-skill="React.js" data-level="85"></div>
+                        <div class="skill-bar" data-skill="Vue.js" data-level="80"></div>
+                        <div class="skill-bar" data-skill="Responsive Design" data-level="95"></div>
+                        <div class="skill-bar" data-skill="SASS/LESS" data-level="85"></div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Python</li>
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                        <li>RESTful APIs</li>
-                    </ul>
+                <div class="skill-card glass-effect animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="Node.js" data-level="85"></div>
+                        <div class="skill-bar" data-skill="Express" data-level="80"></div>
+                        <div class="skill-bar" data-skill="Python" data-level="75"></div>
+                        <div class="skill-bar" data-skill="MongoDB" data-level="80"></div>
+                        <div class="skill-bar" data-skill="MySQL" data-level="75"></div>
+                        <div class="skill-bar" data-skill="RESTful APIs" data-level="85"></div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>Docker</li>
-                        <li>Webpack</li>
-                        <li>VS Code</li>
-                        <li>Figma</li>
-                        <li>Jira</li>
-                    </ul>
+                <div class="skill-card glass-effect animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Herramientas</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="Git & GitHub" data-level="90"></div>
+                        <div class="skill-bar" data-skill="Docker" data-level="70"></div>
+                        <div class="skill-bar" data-skill="Webpack" data-level="75"></div>
+                        <div class="skill-bar" data-skill="VS Code" data-level="95"></div>
+                        <div class="skill-bar" data-skill="Figma" data-level="85"></div>
+                        <div class="skill-bar" data-skill="Jira" data-level="80"></div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-brain"></i> Blandas</h3>
+                <div class="skill-card glass-effect animate-on-scroll">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Blandas</h3>
                     <ul class="skill-list">
-                        <li>Comunicación clara</li>
-                        <li>Trabajo en equipo</li>
-                        <li>Gestión del tiempo</li>
-                        <li>Resolución de problemas</li>
-                        <li>Aprendizaje rápido</li>
-                        <li>Atención al detalle</li>
+                        <li><i class="fas fa-check-circle"></i> Comunicación clara</li>
+                        <li><i class="fas fa-check-circle"></i> Trabajo en equipo</li>
+                        <li><i class="fas fa-check-circle"></i> Gestión del tiempo</li>
+                        <li><i class="fas fa-check-circle"></i> Resolución de problemas</li>
+                        <li><i class="fas fa-check-circle"></i> Aprendizaje rápido</li>
+                        <li><i class="fas fa-check-circle"></i> Atención al detalle</li>
                     </ul>
                 </div>
             </div>
@@ -105,79 +156,105 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience">
+    <section id="experience" class="section">
         <div class="container">
-            <h2>Experiencia</h2>
-            <div class="experience-tabs">
-                <button class="tab-btn active" data-tab="education">Educación</button>
-                <button class="tab-btn" data-tab="work">Experiencia Laboral</button>
-                <button class="tab-btn" data-tab="projects">Proyectos</button>
+            <h2 class="section-title"><span>Experiencia</span></h2>
+            <div class="experience-tabs animate-on-scroll">
+                <button class="tab-btn active" data-tab="education"><i class="fas fa-graduation-cap"></i> Educación</button>
+                <button class="tab-btn" data-tab="work"><i class="fas fa-briefcase"></i> Experiencia Laboral</button>
+                <button class="tab-btn" data-tab="projects"><i class="fas fa-project-diagram"></i> Proyectos</button>
             </div>
             
             <div class="tab-content active" id="education">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Bootcamp Desarrollo Full Stack</h3>
-                        <span class="experience-date">2023</span>
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Bootcamp Desarrollo Full Stack</h3>
+                            <h4>Academia de Código</h4>
+                            <p>Formación intensiva de 12 semanas en desarrollo web full stack, trabajando con tecnologías modernas como React, Node.js y MongoDB.</p>
+                        </div>
                     </div>
-                    <p class="experience-company">Academia de Código</p>
-                    <p>Formación intensiva de 12 semanas en desarrollo web full stack, trabajando con tecnologías modernas como React, Node.js y MongoDB.</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Grado en Ingeniería Informática</h3>
-                        <span class="experience-date">2018 - 2022</span>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">2018 - 2022</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Grado en Ingeniería Informática</h3>
+                            <h4>Universidad Tecnológica</h4>
+                            <p>Especialización en Ingeniería del Software. Proyecto final sobre desarrollo de aplicaciones web accesibles.</p>
+                        </div>
                     </div>
-                    <p class="experience-company">Universidad Tecnológica</p>
-                    <p>Especialización en Ingeniería del Software. Proyecto final sobre desarrollo de aplicaciones web accesibles.</p>
                 </div>
             </div>
             
             <div class="tab-content" id="work">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Desarrolladora Frontend Junior</h3>
-                        <span class="experience-date">2022 - Presente</span>
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">2022 - Presente</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Desarrolladora Frontend Junior</h3>
+                            <h4>TechSolutions Inc.</h4>
+                            <p>Desarrollo y mantenimiento de interfaces de usuario utilizando React. Colaboración con equipo de diseño para implementar features nuevas.</p>
+                        </div>
                     </div>
-                    <p class="experience-company">TechSolutions Inc.</p>
-                    <p>Desarrollo y mantenimiento de interfaces de usuario utilizando React. Colaboración con equipo de diseño para implementar features nuevas.</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Prácticas Profesionales</h3>
-                        <span class="experience-date">2021 (6 meses)</span>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">2021 (6 meses)</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Prácticas Profesionales</h3>
+                            <h4>StartUp Innovadora</h4>
+                            <p>Desarrollo de componentes reutilizables y participación en sprints ágiles como parte del equipo de desarrollo.</p>
+                        </div>
                     </div>
-                    <p class="experience-company">StartUp Innovadora</p>
-                    <p>Desarrollo de componentes reutilizables y participación en sprints ágiles como parte del equipo de desarrollo.</p>
                 </div>
             </div>
             
             <div class="tab-content" id="projects">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Task Manager App</h3>
-                        <span class="experience-date">2023</span>
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Task Manager App</h3>
+                            <p>Aplicación web para gestión de tareas con autenticación y base de datos en tiempo real.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
                     </div>
-                    <p>Aplicación web para gestión de tareas con autenticación y base de datos en tiempo real.</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">E-commerce Site</h3>
-                        <span class="experience-date">2022</span>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>E-commerce Site</h3>
+                            <p>Tienda online completa con carrito de compras, pasarela de pago y panel de administración.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
                     </div>
-                    <p>Tienda online completa con carrito de compras, pasarela de pago y panel de administración.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2>Proyectos Recientes</h2>
+            <h2 class="section-title"><span>Proyectos Recientes</span></h2>
+            <div class="projects-filter animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://via.placeholder.com/350x200');"></div>
+                <div class="project-card glass-effect animate-on-scroll" data-category="fullstack">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        <div class="project-overlay">
+                            <a href="#" class="project-preview"><i class="fas fa-expand"></i></a>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3 class="project-title">Weather Dashboard</h3>
                         <p class="project-description">Aplicación meteorológica con pronóstico actual y de 5 días, utilizando API de OpenWeather.</p>
@@ -192,8 +269,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://via.placeholder.com/350x200');"></div>
+                <div class="project-card glass-effect animate-on-scroll" data-category="frontend">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        <div class="project-overlay">
+                            <a href="#" class="project-preview"><i class="fas fa-expand"></i></a>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3 class="project-title">Recipe Finder</h3>
                         <p class="project-description">Buscador de recetas con filtros por ingredientes, tipo de comida y tiempo de preparación.</p>
@@ -208,8 +289,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://via.placeholder.com/350x200');"></div>
+                <div class="project-card glass-effect animate-on-scroll" data-category="fullstack">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        <div class="project-overlay">
+                            <a href="#" class="project-preview"><i class="fas fa-expand"></i></a>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3 class="project-title">Blog Personal</h3>
                         <p class="project-description">Blog técnico con sistema de comentarios y autenticación, creado con CMS headless.</p>
@@ -225,43 +310,59 @@
                     </div>
                 </div>
             </div>
+            <div class="view-more animate-on-scroll">
+                <a href="#" class="btn btn-view-more">Ver más proyectos <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="container">
-            <h2>Contacto</h2>
-            <div class="contact-container">
-                <div class="contact-info">
+            <h2 class="section-title"><span>Contacto</span></h2>
+            <div class="contact-container animate-on-scroll">
+                <div class="contact-info glass-effect">
                     <h3>¡Hablemos!</h3>
+                    <p>¿Tienes un proyecto en mente o quieres saber más sobre mi trabajo? No dudes en contactarme.</p>
                     <ul class="contact-list">
                         <li><i class="fas fa-envelope"></i> auracamilapico@gmail.com</li>
                         <li><i class="fas fa-phone"></i> +57 3227770682</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Santander , Piedecuesta</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Santander, Piedecuesta</li>
                         <li><i class="fab fa-linkedin"></i> linkedin.com/in/aura-camila-p-3125a4339/</li>
                         <li><i class="fab fa-github"></i> github.com/AuraCamilaPicoAraque</li>
                     </ul>
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/aura-camila-p-3125a4339/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/AuraCamilaPicoAraque" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:auracamilapico@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="contact-form">
-                    <form>
+                <div class="contact-form-container glass-effect">
+                    <form id="contactForm" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Nombre</label>
                             <input type="text" id="name" required>
+                            <label for="name">Nombre</label>
+                            <span class="focus-border"></span>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
                             <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                            <span class="focus-border"></span>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Asunto</label>
                             <input type="text" id="subject" required>
+                            <label for="subject">Asunto</label>
+                            <span class="focus-border"></span>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensaje</label>
                             <textarea id="message" required></textarea>
+                            <label for="message">Mensaje</label>
+                            <span class="focus-border"></span>
                         </div>
-                        <button type="submit" class="btn"><span>Enviar Mensaje</span></button>
+                        <button type="submit" class="btn btn-submit">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -269,25 +370,56 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="glass-effect">
         <div class="container footer-content">
-            <ul class="footer-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-codepen"></i></a>
+            <div class="footer-logo">
+                <img src="../storage/icono.png" alt="Logo">
+                <span>Aura Pico</span>
             </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Sobre mí</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Habilidades</a></li>
+                        <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experiencia</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Proyectos</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> auracamilapico@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +57 3227770682</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Santander, Piedecuesta</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/aura-camila-p-3125a4339/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/AuraCamilaPicoAraque" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:auracamilapico@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Suscríbete a mi newsletter</h5>
+                        <form>
+                            <input type="email" placeholder="Tu email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <p class="copyright">© 2025 Aura Pico. Todos los derechos reservados.</p>
+            <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/portafolio.js"></script>
 </body>
 </html>
