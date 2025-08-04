@@ -542,6 +542,8 @@ header h1 {
     color: var(--accent-color);
 }
 
+
+
 /* Experience Section */
 .experience-tabs {
     display: flex;
@@ -1324,10 +1326,19 @@ footer {
     border-radius: 50%;
     margin-bottom: 25px;
     font-size: 1.8rem;
-    color: var(--text-color);
-    background: linear-gradient(135deg, var(--light-accent) 0%, var(--accent-color) 100%);
-    box-shadow: 0 10px 20px rgba(126, 168, 190, 0.3);
+    transition: transform 0.3s ease;
 }
+.vision-icon:hover {
+    transform: rotate(-180deg);
+    transition: transform 0.6s ease;
+}
+
+.mision-icon:hover {
+    transform: rotate(180deg);
+    transition: transform 0.6s ease;
+}
+
+
 
 .vision-card h3, .mision-card h3 {
     font-size: 1.8rem;
@@ -1354,6 +1365,10 @@ footer {
     color: var(--text-secondary);
     margin-bottom: 0;
 }
+
+
+
+
 
 /* Valores Mejorados */
 .values-container {
@@ -1397,7 +1412,6 @@ footer {
     background: var(--glass-effect);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid var(--glass-border);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
     position: relative;
@@ -1423,15 +1437,84 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    background: linear-gradient(135deg, var(--light-accent) 0%, var(--accent-color) 100%);
+    font-size: 2.1rem;
+    color: var(--accent-color);
+    background: var(--secondary-color);
     margin-bottom: 20px;
-    box-shadow: 0 8px 15px rgba(126, 168, 190, 0.3);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Efecto hover con animación de giro */
+.value-item i:hover {
+    background: var(--accent-color);
+    color: white;
+    animation: spinLeft 0.6s forwards;
+}
+
+/* Animación cuando el mouse sale */
+.value-item i:not(:hover) {
+    animation: spinRight 0.6s forwards;
+}
+
+/* Contador para el efecto bucle */
+.value-item i {
+    --click-count: 0;
+}
+
+.value-item i:hover:active {
+    --click-count: calc(var(--click-count) + 1);
+    animation: spinLeft 0.6s forwards, 
+               loopSpin 0.6s calc(var(--click-count) * 0.1s) forwards;
+}
+
+/* Keyframes */
+@keyframes spinLeft {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(-180deg) scale(1.1); }
+    100% { transform: rotate(-360deg) scale(1.1); }
+}
+
+@keyframes spinRight {
+    0% { transform: rotate(-360deg) scale(1.1); }
+    50% { transform: rotate(-180deg) scale(1); }
+    100% { transform: rotate(0deg) scale(1); }
+}
+
+@keyframes loopSpin {
+    0%, 100% { transform: rotate(0deg) scale(1.1); }
+    25% { transform: rotate(-90deg) scale(1.15); }
+    50% { transform: rotate(-180deg) scale(1.1); }
+    75% { transform: rotate(-270deg) scale(1.15); }
+}
+
+/* Efecto de "rebote" al completar el giro */
+.value-item i::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    pointer-events: none;
+}
+
+.value-item i:hover::after {
+    animation: pulseRing 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes pulseRing {
+    0% { transform: scale(0.8); opacity: 1; border-color: rgba(255,255,255,0.8); }
+    100% { transform: scale(1.5); opacity: 0; border-color: transparent; }
+}
+
 
 .value-item h4 {
     font-size: 1.5rem;
@@ -1447,6 +1530,9 @@ footer {
     margin-bottom: 0;
 }
 
+
+
+
 /* Efectos de onda decorativos */
 .wave-decoration {
     position: absolute;
@@ -1458,6 +1544,8 @@ footer {
     background-size: cover;
     z-index: 0;
 }
+
+
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -1502,3 +1590,6 @@ footer {
         font-size: 1.3rem;
     }
 }
+
+
+
